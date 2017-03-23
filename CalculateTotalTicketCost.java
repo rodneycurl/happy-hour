@@ -1,7 +1,7 @@
 // This program allows for a zoo visitor to calculate the cost of their ticket by entering their age and day they wish to visit the Zoo.
 import javax.swing.JOptionPane;
 
-public class TicketCost {
+public class CalculateTotalTicketCost {
   public static void main(String[] args) {
     double ticketPrice = 0.0;
   //The user will enter their age then based on their age the price of their ticket will be assigned, childrens tickets under 6 are free, all other tickets are not free
