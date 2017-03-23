@@ -24,3 +24,6 @@ public class TicketCost {
       }
     }
   }
+else {
+  JOptionPane.showMessageDialog(null,"You have entered an invalid age");
+}
