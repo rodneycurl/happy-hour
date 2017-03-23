@@ -27,3 +27,39 @@ public class TicketCost {
 else {
   JOptionPane.showMessageDialog(null,"You have entered an invalid age");
 }
+String monday = "Monday";
+   String tuesday = "Tuesday";
+   String wednesday = "Wednesday";
+   String thursday = "Thursday";
+   String friday = "Friday";
+   String saturday = "Saturday";
+   String sunday = "Sunday";
+   double discountRate = 0.0;
+   String weekDay = JOptionPane.showInputDialog("What day would you like to visit the Zoo? ");
+   if ((weekDay.equalsIgnoreCase(monday)) || (weekDay.equalsIgnoreCase(tuesday)) || (weekDay.equalsIgnoreCase(wednesday)) || (weekDay.equalsIgnoreCase(thursday)) || (weekDay.equalsIgnoreCase(friday)) || (weekDay.equalsIgnoreCase(saturday)) || (weekDay.equalsIgnoreCase(sunday))) {
+      if ((weekDay.equalsIgnoreCase(monday)) || (weekDay.equalsIgnoreCase(tuesday)) || (weekDay.equalsIgnoreCase(wednesday)) || (weekDay.equalsIgnoreCase(thursday)) || (weekDay.equalsIgnoreCase(friday))) {
+         discountRate = 0.20;
+      }
+      else{
+         if ((weekDay.equalsIgnoreCase(saturday)) || (weekDay.equalsIgnoreCase(sunday))) {
+            discountRate = 0.00;
+         }
+         else {
+         }
+      }
+   }
+   else {
+      JOptionPane.showMessageDialog(null,"You entered an invalid week day");
+   }
+   //The convenience fee is the dame for each ticket
+   double convenienceFee = 0.85;
+   //The discount is the amount that will be subtracted from the actual price of the ticket
+   double discount = discountRate * ticketPrice ;
+   // ticketCost is the total cost of the ticket before the sales tax is applied
+   double ticketCost = (ticketPrice - discount) + convenienceFee;
+   double salesTax = ticketCost * 0.10;
+   // totalCost is the price of the ticket after the sales tax has been added
+   double totalCost = ticketCost + salesTax;
+   JOptionPane.showMessageDialog(null, "Ticket Reciept\n" + "Age of ticket holder: " + age + "\nCost of the ticket: " + String.format("$%.2f",ticketCost) + " (Convenience Fee: " + String.format("$%.2f",convenienceFee) + " and Discount: " + String.format("$%.2f",(discountRate * 100)) + "%" + ")" + "\nSales Tax: " + String.format("$%.2f",salesTax) + "\nTotal Cost: " + String.format("$%.2f",totalCost));
+   }
+}
