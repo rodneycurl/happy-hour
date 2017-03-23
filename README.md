@@ -26,9 +26,7 @@ Visit https://www.java.com to learn more about Java.
 Learn Java Here https://www.codecademy.com/learn/learn-java
 
 # Java Interview Questions
-Q1. Which two methods do you need to implement for key Object in HashMap?
-Q2. What is immutable object?
-Q3. What is the difference between creating String as new() and literal?
+Q1. Which two methods do you need to implement for key Object in HashMap? // Q2. What is immutable object? // Q3. What is the difference between creating String as new() and literal?
 
 # Zoolander Installion Instructions
 Step 1 AAAAA
