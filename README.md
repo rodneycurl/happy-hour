@@ -29,4 +29,4 @@ Learn Java Here https://www.codecademy.com/learn/learn-java
 Q1. Which two methods do you need to implement for key Object in HashMap? // Q2. What is immutable object? // Q3. What is the difference between creating String as new() and literal?
 
 # Zoolander Installion Instructions
-Step 1 AAAAA
+To run the program in Atom you would need to download and install a package called script package, after installing the package start the program by using command+I.
